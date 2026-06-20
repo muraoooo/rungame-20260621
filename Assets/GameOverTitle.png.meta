@@ -1,0 +1,351 @@
+fileFormatVersion: 2
+guid: bad3aa997333c4184a147962547bd038
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7460597840079352519
+    second: 0554_english_paper_font_patterns__06_candy_mix__sample_words__game_over_0
+  - first:
+      213: -4105613161049690870
+    second: 0554_english_paper_font_patterns__06_candy_mix__sample_words__game_over_1
+  - first:
+      213: 5592543590301503452
+    second: 0554_english_paper_font_patterns__06_candy_mix__sample_words__game_over_2
+  - first:
+      213: -8683873777852876539
+    second: 0554_english_paper_font_patterns__06_candy_mix__sample_words__game_over_3
+  - first:
+      213: 2934132637885740858
+    second: 0554_english_paper_font_patterns__06_candy_mix__sample_words__game_over_4
+  - first:
+      213: -6151657953497535663
+    second: 0554_english_paper_font_patterns__06_candy_mix__sample_words__game_over_5
+  - first:
+      213: 67490845774422035
+    second: 0554_english_paper_font_patterns__06_candy_mix__sample_words__game_over_6
+  - first:
+      213: 6674722630026013421
+    second: 0554_english_paper_font_patterns__06_candy_mix__sample_words__game_over_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 0554_english_paper_font_patterns__06_candy_mix__sample_words__game_over_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 22
+        width: 68
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93d060adac1a67890800000000000000
+      internalID: -7460597840079352519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 0554_english_paper_font_patterns__06_candy_mix__sample_words__game_over_1
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 22
+        width: 63
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0de67e159ee507c0800000000000000
+      internalID: -4105613161049690870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 0554_english_paper_font_patterns__06_candy_mix__sample_words__game_over_2
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 19
+        width: 76
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdf0fcac3c4bc9d40800000000000000
+      internalID: 5592543590301503452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 0554_english_paper_font_patterns__06_candy_mix__sample_words__game_over_3
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 31
+        width: 53
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 509ffb4eeceac7780800000000000000
+      internalID: -8683873777852876539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 0554_english_paper_font_patterns__06_candy_mix__sample_words__game_over_4
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 31
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a373f05a61228b820800000000000000
+      internalID: 2934132637885740858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 0554_english_paper_font_patterns__06_candy_mix__sample_words__game_over_5
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 26
+        width: 63
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15ba2162fabe0aaa0800000000000000
+      internalID: -6151657953497535663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 0554_english_paper_font_patterns__06_candy_mix__sample_words__game_over_6
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 18
+        width: 53
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 310a9ff0196cfe000800000000000000
+      internalID: 67490845774422035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 0554_english_paper_font_patterns__06_candy_mix__sample_words__game_over_7
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 22
+        width: 61
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dea26f82ed061ac50800000000000000
+      internalID: 6674722630026013421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      0554_english_paper_font_patterns__06_candy_mix__sample_words__game_over_0: -7460597840079352519
+      0554_english_paper_font_patterns__06_candy_mix__sample_words__game_over_1: -4105613161049690870
+      0554_english_paper_font_patterns__06_candy_mix__sample_words__game_over_2: 5592543590301503452
+      0554_english_paper_font_patterns__06_candy_mix__sample_words__game_over_3: -8683873777852876539
+      0554_english_paper_font_patterns__06_candy_mix__sample_words__game_over_4: 2934132637885740858
+      0554_english_paper_font_patterns__06_candy_mix__sample_words__game_over_5: -6151657953497535663
+      0554_english_paper_font_patterns__06_candy_mix__sample_words__game_over_6: 67490845774422035
+      0554_english_paper_font_patterns__06_candy_mix__sample_words__game_over_7: 6674722630026013421
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

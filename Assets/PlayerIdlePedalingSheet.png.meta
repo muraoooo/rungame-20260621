@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: dcfdaacc139b44424bdb0c2dc4a963ea
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1432403856007957374
+    second: 0013_04_player_paper_pedaling_sheet_transparent_0
+  - first:
+      213: 5919169646542440453
+    second: 0013_04_player_paper_pedaling_sheet_transparent_1
+  - first:
+      213: 660057912794033257
+    second: 0013_04_player_paper_pedaling_sheet_transparent_2
+  - first:
+      213: -5879766908620468198
+    second: 0013_04_player_paper_pedaling_sheet_transparent_3
+  - first:
+      213: 1660250293960542780
+    second: 0013_04_player_paper_pedaling_sheet_transparent_4
+  - first:
+      213: 8204153956852158922
+    second: 0013_04_player_paper_pedaling_sheet_transparent_5
+  - first:
+      213: 3276455306324598470
+    second: 0013_04_player_paper_pedaling_sheet_transparent_6
+  - first:
+      213: 352924230128627806
+    second: 0013_04_player_paper_pedaling_sheet_transparent_7
+  - first:
+      213: 4938919419367275659
+    second: 0013_04_player_paper_pedaling_sheet_transparent_8
+  - first:
+      213: -8300324747891467654
+    second: 0013_04_player_paper_pedaling_sheet_transparent_9
+  - first:
+      213: -6829689375573527927
+    second: 0013_04_player_paper_pedaling_sheet_transparent_10
+  - first:
+      213: 3366559551254976000
+    second: 0013_04_player_paper_pedaling_sheet_transparent_11
+  - first:
+      213: 109396950288014262
+    second: 0013_04_player_paper_pedaling_sheet_transparent_12
+  - first:
+      213: 116991525912899710
+    second: 0013_04_player_paper_pedaling_sheet_transparent_13
+  - first:
+      213: 5057166258567801203
+    second: 0013_04_player_paper_pedaling_sheet_transparent_14
+  - first:
+      213: -7850606955335682627
+    second: 0013_04_player_paper_pedaling_sheet_transparent_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 0013_04_player_paper_pedaling_sheet_transparent_0
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 922
+        width: 235
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7b0144c7bbe0e310800000000000000
+      internalID: 1432403856007957374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 0013_04_player_paper_pedaling_sheet_transparent_1
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 922
+        width: 235
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 508cf63be6d152250800000000000000
+      internalID: 5919169646542440453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 0013_04_player_paper_pedaling_sheet_transparent_2
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 922
+        width: 228
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96c264fac2ff82900800000000000000
+      internalID: 660057912794033257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 0013_04_player_paper_pedaling_sheet_transparent_3
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 921
+        width: 233
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a109491262fd66ea0800000000000000
+      internalID: -5879766908620468198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 0013_04_player_paper_pedaling_sheet_transparent_4
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 608
+        width: 229
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3a81c198d46a0710800000000000000
+      internalID: 1660250293960542780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 0013_04_player_paper_pedaling_sheet_transparent_5
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 608
+        width: 228
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac1d9c86e820bd170800000000000000
+      internalID: 8204153956852158922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 0013_04_player_paper_pedaling_sheet_transparent_6
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 608
+        width: 222
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cedbefddbe487d20800000000000000
+      internalID: 3276455306324598470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 0013_04_player_paper_pedaling_sheet_transparent_7
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 608
+        width: 229
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e50f179a7b6d5e400800000000000000
+      internalID: 352924230128627806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 0013_04_player_paper_pedaling_sheet_transparent_8
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 296
+        width: 231
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8c3aad5b019a8440800000000000000
+      internalID: 4938919419367275659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 0013_04_player_paper_pedaling_sheet_transparent_9
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 296
+        width: 224
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7a9b896e925fcc80800000000000000
+      internalID: -8300324747891467654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 0013_04_player_paper_pedaling_sheet_transparent_10
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 296
+        width: 227
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9823eaab2b11831a0800000000000000
+      internalID: -6829689375573527927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 0013_04_player_paper_pedaling_sheet_transparent_11
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 296
+        width: 229
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00650c7331c68be20800000000000000
+      internalID: 3366559551254976000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 0013_04_player_paper_pedaling_sheet_transparent_12
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 222
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bb9d6952f7a48100800000000000000
+      internalID: 109396950288014262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 0013_04_player_paper_pedaling_sheet_transparent_13
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 0
+        width: 218
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e70f4c74c23af9100800000000000000
+      internalID: 116991525912899710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 0013_04_player_paper_pedaling_sheet_transparent_14
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 0
+        width: 218
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 379660c0be9ae2640800000000000000
+      internalID: 5057166258567801203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 0013_04_player_paper_pedaling_sheet_transparent_15
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 1
+        width: 215
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db57104819a0d0390800000000000000
+      internalID: -7850606955335682627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      0013_04_player_paper_pedaling_sheet_transparent_0: 1432403856007957374
+      0013_04_player_paper_pedaling_sheet_transparent_1: 5919169646542440453
+      0013_04_player_paper_pedaling_sheet_transparent_10: -6829689375573527927
+      0013_04_player_paper_pedaling_sheet_transparent_11: 3366559551254976000
+      0013_04_player_paper_pedaling_sheet_transparent_12: 109396950288014262
+      0013_04_player_paper_pedaling_sheet_transparent_13: 116991525912899710
+      0013_04_player_paper_pedaling_sheet_transparent_14: 5057166258567801203
+      0013_04_player_paper_pedaling_sheet_transparent_15: -7850606955335682627
+      0013_04_player_paper_pedaling_sheet_transparent_2: 660057912794033257
+      0013_04_player_paper_pedaling_sheet_transparent_3: -5879766908620468198
+      0013_04_player_paper_pedaling_sheet_transparent_4: 1660250293960542780
+      0013_04_player_paper_pedaling_sheet_transparent_5: 8204153956852158922
+      0013_04_player_paper_pedaling_sheet_transparent_6: 3276455306324598470
+      0013_04_player_paper_pedaling_sheet_transparent_7: 352924230128627806
+      0013_04_player_paper_pedaling_sheet_transparent_8: 4938919419367275659
+      0013_04_player_paper_pedaling_sheet_transparent_9: -8300324747891467654
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
