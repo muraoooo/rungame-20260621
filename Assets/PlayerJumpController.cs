@@ -5,7 +5,20 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(Collider2D))]
 public class PlayerJumpController : MonoBehaviour
 {
+    [HideInInspector]
     public float jumpPower = 500f;
+
+    [Header("Jump Feel")]
+    [SerializeField] float tunedJumpVelocity = 9f;
+    [SerializeField] float tunedEstimatedJumpHeight = 1.7f;
+    [SerializeField] [Range(0.1f, 0.95f)] float tunedFastRiseHeightRatio = 0.75f;
+    [SerializeField] float tunedFastRiseGravityScale = 1.85f;
+    [SerializeField] float tunedApexGravityScale = 2.6f;
+    [SerializeField] float tunedFallGravityScale = 3.6f;
+    [SerializeField] float tunedFastFallGravityScale = 7.5f;
+    [SerializeField] float tunedFastFallStartVelocity = -0.35f;
+    [SerializeField] float tunedApexVelocityThreshold = 0.25f;
+    [SerializeField] float tunedMaxFallSpeed = 18f;
 
     [Header("Jump Sprite")]
     [SerializeField] SpriteRenderer spriteRenderer;
@@ -16,11 +29,15 @@ public class PlayerJumpController : MonoBehaviour
 
     Rigidbody2D rb2d;
     Collider2D playerCollider;
+    float defaultGravityScale = 1f;
+    float jumpStartY;
+    bool isJumping;
 
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
         playerCollider = GetComponent<Collider2D>();
+        defaultGravityScale = rb2d.gravityScale;
 
         if (spriteRenderer == null)
         {
@@ -51,11 +68,62 @@ public class PlayerJumpController : MonoBehaviour
 
         if (keyboard.spaceKey.wasPressedThisFrame && grounded)
         {
-            rb2d.AddForce(transform.up * jumpPower);
+            Jump();
             grounded = false;
         }
 
         UpdateJumpSprite(grounded);
+    }
+
+    void FixedUpdate()
+    {
+        UpdateJumpGravity(IsGrounded());
+    }
+
+    void Jump()
+    {
+        Vector2 velocity = rb2d.linearVelocity;
+        velocity.y = tunedJumpVelocity;
+        rb2d.linearVelocity = velocity;
+        jumpStartY = transform.position.y;
+        isJumping = true;
+        rb2d.gravityScale = tunedFastRiseGravityScale;
+    }
+
+    void UpdateJumpGravity(bool grounded)
+    {
+        if (rb2d == null)
+        {
+            return;
+        }
+
+        if (grounded && rb2d.linearVelocity.y <= 0.05f)
+        {
+            isJumping = false;
+            rb2d.gravityScale = defaultGravityScale;
+            return;
+        }
+
+        float verticalVelocity = rb2d.linearVelocity.y;
+
+        if (verticalVelocity > tunedApexVelocityThreshold)
+        {
+            float heightProgress = Mathf.Clamp01((transform.position.y - jumpStartY) / tunedEstimatedJumpHeight);
+            rb2d.gravityScale = heightProgress < tunedFastRiseHeightRatio ? tunedFastRiseGravityScale : tunedApexGravityScale;
+        }
+        else if (isJumping && Mathf.Abs(verticalVelocity) <= tunedApexVelocityThreshold)
+        {
+            rb2d.gravityScale = tunedApexGravityScale;
+        }
+        else if (verticalVelocity < -Mathf.Abs(tunedApexVelocityThreshold))
+        {
+            rb2d.gravityScale = verticalVelocity <= tunedFastFallStartVelocity ? tunedFastFallGravityScale : tunedFallGravityScale;
+        }
+
+        if (tunedMaxFallSpeed > 0f && rb2d.linearVelocity.y < -tunedMaxFallSpeed)
+        {
+            rb2d.linearVelocity = new Vector2(rb2d.linearVelocity.x, -tunedMaxFallSpeed);
+        }
     }
 
     bool IsGrounded()
@@ -100,5 +168,27 @@ public class PlayerJumpController : MonoBehaviour
         {
             spriteRenderer.sprite = nextSprite;
         }
+    }
+
+    void OnDisable()
+    {
+        if (rb2d != null)
+        {
+            rb2d.gravityScale = defaultGravityScale;
+        }
+    }
+
+    void OnValidate()
+    {
+        jumpPower = Mathf.Max(0f, jumpPower);
+        tunedJumpVelocity = Mathf.Max(0.01f, tunedJumpVelocity);
+        tunedEstimatedJumpHeight = Mathf.Max(0.01f, tunedEstimatedJumpHeight);
+        tunedFastRiseGravityScale = Mathf.Max(0.01f, tunedFastRiseGravityScale);
+        tunedApexGravityScale = Mathf.Max(0.01f, tunedApexGravityScale);
+        tunedFallGravityScale = Mathf.Max(0.01f, tunedFallGravityScale);
+        tunedFastFallGravityScale = Mathf.Max(tunedFallGravityScale, tunedFastFallGravityScale);
+        tunedFastFallStartVelocity = -Mathf.Abs(tunedFastFallStartVelocity);
+        tunedApexVelocityThreshold = Mathf.Max(0.01f, tunedApexVelocityThreshold);
+        tunedMaxFallSpeed = Mathf.Max(0f, tunedMaxFallSpeed);
     }
 }

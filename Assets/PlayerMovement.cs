@@ -7,16 +7,23 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 5f;
 
     [SerializeField] SpriteRenderer spriteRenderer;
+    [SerializeField] bool lockAirTurnaround = true;
+    [SerializeField] float groundedCheckDistance = 0.08f;
     [SerializeField] float paperFlipDuration = 0.18f;
     [SerializeField] float paperFlipThinScale = 0.08f;
     [SerializeField] float paperFlipTilt = 4f;
 
+    Collider2D playerCollider;
     SpriteRenderer flipRenderer;
     Coroutine flipCoroutine;
     bool isFacingLeft;
+    int airMoveDirection;
+    bool wasGrounded;
 
     void Awake()
     {
+        playerCollider = GetComponent<Collider2D>();
+
         if (spriteRenderer == null)
         {
             spriteRenderer = GetComponent<SpriteRenderer>();
@@ -49,8 +56,85 @@ public class PlayerMovement : MonoBehaviour
             x = 1f;
         }
 
+        x = ApplyAirTurnLock(x);
         UpdateFacingDirection(x);
         transform.position += new Vector3(x * speed * Time.deltaTime, 0, 0);
+    }
+
+    float ApplyAirTurnLock(float inputX)
+    {
+        if (!lockAirTurnaround)
+        {
+            return inputX;
+        }
+
+        bool grounded = IsGrounded();
+
+        if (grounded)
+        {
+            wasGrounded = true;
+            airMoveDirection = 0;
+            return inputX;
+        }
+
+        if (wasGrounded)
+        {
+            airMoveDirection = GetDirectionSign(inputX);
+
+            if (airMoveDirection == 0)
+            {
+                airMoveDirection = isFacingLeft ? -1 : 1;
+            }
+
+            wasGrounded = false;
+        }
+
+        int inputDirection = GetDirectionSign(inputX);
+
+        if (inputDirection == 0)
+        {
+            return 0f;
+        }
+
+        return inputDirection == airMoveDirection ? inputX : 0f;
+    }
+
+    bool IsGrounded()
+    {
+        if (playerCollider == null)
+        {
+            return true;
+        }
+
+        Bounds bounds = playerCollider.bounds;
+        Vector2 checkPosition = new Vector2(bounds.center.x, bounds.min.y - groundedCheckDistance * 0.5f);
+        Vector2 checkSize = new Vector2(bounds.size.x * 0.8f, groundedCheckDistance);
+        Collider2D[] hits = Physics2D.OverlapBoxAll(checkPosition, checkSize, 0f);
+
+        foreach (Collider2D hit in hits)
+        {
+            if (hit != playerCollider && !hit.isTrigger)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    int GetDirectionSign(float x)
+    {
+        if (x > 0f)
+        {
+            return 1;
+        }
+
+        if (x < 0f)
+        {
+            return -1;
+        }
+
+        return 0;
     }
 
     void OnDisable()
@@ -173,5 +257,14 @@ public class PlayerMovement : MonoBehaviour
         target.sortingOrder = source.sortingOrder;
         target.material = source.sharedMaterial;
         target.flipY = source.flipY;
+    }
+
+    void OnValidate()
+    {
+        speed = Mathf.Max(0f, speed);
+        groundedCheckDistance = Mathf.Max(0.01f, groundedCheckDistance);
+        paperFlipDuration = Mathf.Max(0f, paperFlipDuration);
+        paperFlipThinScale = Mathf.Clamp(paperFlipThinScale, 0.01f, 1f);
+        paperFlipTilt = Mathf.Max(0f, paperFlipTilt);
     }
 }

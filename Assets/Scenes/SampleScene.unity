@@ -393,6 +393,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   speed: 5
   spriteRenderer: {fileID: 0}
+  lockAirTurnaround: 1
+  groundedCheckDistance: 0.08
+  paperFlipDuration: 0.18
+  paperFlipThinScale: 0.08
+  paperFlipTilt: 4
 --- !u!114 &293819707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -405,7 +410,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c7512d7f201445d5bc43bfb41f06a18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerJumpController
-  jumpPower: 300
+  jumpPower: 9
+  tunedJumpVelocity: 9
+  tunedEstimatedJumpHeight: 1.7
+  tunedFastRiseHeightRatio: 0.75
+  tunedFastRiseGravityScale: 1.85
+  tunedApexGravityScale: 2.6
+  tunedFallGravityScale: 3.6
+  tunedFastFallGravityScale: 7.5
+  tunedFastFallStartVelocity: -0.35
+  tunedApexVelocityThreshold: 0.25
+  tunedMaxFallSpeed: 18
   spriteRenderer: {fileID: 0}
   spriteAnimator: {fileID: 0}
   useAnimatorWhileGrounded: 1
